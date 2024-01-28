@@ -5,6 +5,28 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+  {
+    id: 1,
+    title: "Face Encrypt",
+    description: `Software responsible for data protection by combining facial recognition and encryption, 
+    ensuring secure access to sensitive directories. Ideal for both personal and professional use.`,
+    image: "/images/projects/1.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 2,
+    title: "Soccer World Website",
+    description: `The Soccer World is connected to two brother websites. New features were added to the websites 
+    (such a program filtering, newsletter, and weather information). Most importantly, adjusted the websites to function as a unified 
+    digital ecosystem.\n
+    *Source code not public`,
+    image: "/images/projects/2.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -28,9 +50,10 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects <br></br>(Section under construction)
+        My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        {/*
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -46,6 +69,7 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
+        */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
