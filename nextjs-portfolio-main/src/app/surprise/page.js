@@ -1,30 +1,20 @@
-import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
-import AboutSection from "../components/AboutSection";
-import ProjectsSection from "../components/ProjectsSection";
-import Footer from "../components/Footer";
-import ConnectSection from "../components/ConnectSection"
-
 import React from 'react';
 
 const UnderConstruction = () => {
   return (
-    <div class="container">
-      <div class="valentines">
-        <div class="envelope"></div>
-        <div class="front"></div>
-        <div class="card">
-          <div class="text">Will<br> You be</br> My Valentine? </div>
-          <div class="heart"></div>
+    <div className="container">
+      {/* If the Valentine's card is part of the Under Construction theme, keep it; otherwise, consider removing or replacing it */}
+      <div className="valentines">
+        <div className="envelope"></div>
+        <div className="front"></div>
+        <div className="card">
+          <div className="text">Will<br/> You be<br/> My Valentine? </div>
+          <div className="heart"></div>
         </div>
-        <div>
-        </div>
-        <div class="shadow"></div>
+        <div className="shadow"></div>
       </div>
-      <script src="script.js"></script>
     </div>
   );
 };
-
 
 export default UnderConstruction;
